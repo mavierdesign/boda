@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bodas de Oro - Juan y Juana</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Juan Ramírez García<br>& Juana García Maldonado</h1>
+      <p class="fecha-evento">20 de septiembre de 2025</p>
+      <div id="contador" class="contador"></div>
+    </div>
+  </header>
+
+  <!--SECCION DE EVENTO-->
+  <section class="evento" data-aos="fade-up">
+  <h2>Nuestra Celebración</h2>
+  <p class="subtitulo">Acompáñanos a celebrar nuestros 50 años de amor</p>
+
+  <div class="evento-grid">
+    <div class="card-evento">
+      <img src="icons/rio.png" alt="Icono misa" class="icono-png" />
+      <h3>Misa</h3>
+      <p class="hora">12:00 PM</p>
+      <p class="lugar">Parroquia de Corpus Christi</p>
+      <p class="direccion">C. Río de Tecolutla, Jardines de Tuxpan,<br>92890 Túxpam de Rodríguez Cano, Ver.</p>
+      <a href="https://www.google.com/maps?q=Parroquia+de+Corpus+Christi+Tuxpan+Veracruz" target="_blank" class="btn-mapa">Ver dirección</a>
+    </div>
+
+    <div class="card-evento">
+      <img src="icons/comida.png" alt="Icono misa" class="icono-png" />
+      <h3>Comida</h3>
+      <p class="hora">2:00 PM</p>
+      <p class="lugar">Salón Campestre Reynosa</p>
+      <p class="direccion">Calle Agustín Melgar 33, Universitaria,<br>Alto Lucero, Ver. CP 92895</p>
+      <a href="https://maps.app.goo.gl/i4MYULmPSBbTrN8QA" target="_blank" class="btn-mapa">Ver dirección</a>
+    </div>
+  </div>
+</section>
+
+<!--GALERÍA DE FOTOS-->|
+<section class="galeria" data-aos="fade-up">
+  <h2>Recuerdos especiales</h2>
+  <p class="galeria-subtitulo">Muy pronto aquí podrás ver algunos momentos importantes de esta celebración.</p>
+
+  <div class="galeria-grid">
+    <div class="foto-placeholder"></div>
+    <div class="foto-placeholder"></div>
+    <div class="foto-placeholder"></div>
+    <div class="foto-placeholder"></div>
+    <div class="foto-placeholder"></div>
+    <div class="foto-placeholder"></div>
+  </div>
+</section>
+
+
+<!--cONFIRMACIÓN-->
+<section class="confirmacion-amplia" data-aos="fade-up">
+  <div class="card-confirmacion">
+    <h2>¿Nos acompañas?</h2>
+    <p class="mensaje">
+      Por favor, ayúdanos a planear este día tan especial<br>
+      confirmando tu asistencia vía WhatsApp.
+    </p>
+
+    <a href="https://wa.me/527841459285?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20las%20Bodas%20de%20Oro%20de%20Juan%20y%20Juana.%20🎉"
+       target="_blank"
+       class="btn-whatsapp">
+      <img src="icons/whatsapp.png" alt="WhatsApp" class="logo-btn" />
+      Confirmar asistencia
+    </a>
+  </div>
+</section>
+
+<!--DESPEDIDA-->
+<section class="despedida" data-aos="fade-up">
+  <img src="img/paloma.png" alt="Paloma decorativa" class="icono-paloma" />
+  <hr class="linea-dorada" />
+  <p class="frase-despedida">
+    Gracias por ser parte de nuestra historia de amor.<br>
+    ¡Te esperamos con mucho cariño!
+  </p>
+</section>
+
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,  // anima solo la primera vez que aparece
+    duration: 1000,  // duración de animación en ms
+  });
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>

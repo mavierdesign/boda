@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  color: #3b3b3b;
+  background-color: #ffffff;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('img/fondo.jpg'); /* Aquí va tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5)
+  ); /* Más oscuro */
+  padding: 40px 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  color: #fff;
+  max-width: 90%;
+  animation: fadeIn 2s ease-out;
+}
+
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.fecha-evento {
+  font-size: 1.2rem;
+  color: #f7e97d; /* Dorado claro */
+  margin-bottom: 20px;
+}
+
+.contador {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .contador {
+    font-size: 2rem;
+  }
+
+  .overlay {
+    max-width: 600px;
+  }
+}
+
+/*SECCIONES*/
+/*EVENTO*/
+.evento {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.evento h2 {
+  font-size: 2rem;
+  color: #6d0000;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.evento-grid {
+  display: grid;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card-evento {
+  background-color: #ffffff;
+  border: 2px solid #a8901e; /* dorado elegante */
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.card-evento:hover {
+  transform: translateY(-5px);
+}
+
+.card-evento h3 {
+  color: #6d0000;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.card-evento .hora {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.card-evento .lugar {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-evento .direccion {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.emoji {
+  font-size: 2rem;
+}
+
+/* Responsive grid */
+@media (min-width: 600px) {
+  .evento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.btn-mapa {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #6d0000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-mapa:hover {
+  background-color: #a8901e; /* dorado en hover */
+  color: #fff;
+}
+
+.icono-png {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+
+/*CONFIRMACION*/
+.confirmacion-amplia {
+  background-color: #f7f4ee;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-confirmacion {
+  background-color: #ffffff;
+  border: 2px solid #a8901e; /* borde dorado */
+  border-radius: 20px;
+  padding: 50px 30px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.card-confirmacion h2 {
+  font-size: 2rem;
+  color: #6d0000;
+  margin-bottom: 15px;
+}
+
+.card-confirmacion .mensaje {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+  gap: 10px;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebc57;
+}
+
+.logo-btn {
+  width: 22px;
+  height: 22px;
+}
+
+/*SECCION DE FOTOS ESPERANDO QUE SE INTEGREN DESPUES*/
+.galeria {
+  padding: 80px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.galeria h2 {
+  color: #6d0000;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.galeria-subtitulo {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.galeria-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.foto-placeholder {
+  background-color: #e0e0e0;
+  border: 2px dashed #bbb;
+  border-radius: 12px;
+  height: 200px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.foto-placeholder:hover {
+  background-color: #dadada;
+  cursor: default;
+}
+
+/* DESPEDIDA */
+
+
+.despedida {
+  background-color: #fffdf8;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.frase-despedida {
+  font-size: 1.4rem;
+  color: #6d0000;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .frase-despedida {
+    font-size: 1.2rem;
+  }
+}
+
+.icono-paloma {
+  width: 80px;
+  height: auto;
+  margin: 0 auto 10px auto;
+  display: block;
+  opacity: 0.9;
+}
+
+.linea-dorada {
+  border: none;
+  height: 2px;
+  width: 100px;
+  background-color: #a8901e;
+  margin: 20px auto;
+}
+
+
+
