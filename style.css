@@ -83,6 +83,14 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .hero {
+    background-position: right center; /* mueve la imagen hacia la derecha */
+    background-size: cover; /* para asegurarse que sigue cubriendo */
+  }
+}
+
+
 /*SECCIONES*/
 /*EVENTO*/
 .evento {
