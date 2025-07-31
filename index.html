@@ -45,19 +45,31 @@
 </section>
 
 <!--GALERÍA DE FOTOS-->|
-<section class="galeria" data-aos="fade-up">
+<section class="galeria" id="galeria" data-aos="fade-up">
   <h2>Recuerdos especiales</h2>
-  <p class="galeria-subtitulo">Muy pronto aquí podrás ver algunos momentos importantes de esta celebración.</p>
+  <p class="galeria-subtitulo">Momentos importantes de esta celebración.</p>
 
-  <div class="galeria-grid">
-    <div class="foto-placeholder"></div>
-    <div class="foto-placeholder"></div>
-    <div class="foto-placeholder"></div>
-    <div class="foto-placeholder"></div>
-    <div class="foto-placeholder"></div>
-    <div class="foto-placeholder"></div>
+  <div class="swiper galeria-swiper">
+    <div class="swiper-wrapper">
+      <!-- Una slide por cada foto -->
+      <div class="swiper-slide">
+        <img src="fotos/foto1.jpeg" alt="Foto 1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="fotos/foto2.jpeg" alt="Foto 2" />
+      </div>
+      <div class="swiper-slide">
+        <img src="fotos/foto3.jpeg" alt="Foto 3" />
+      </div>
+      <!-- ...hasta foto19 o más -->
+    </div>
+
+    <!-- Flechas -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 </section>
+
 
 
 <!--cONFIRMACIÓN-->
@@ -97,7 +109,15 @@
     duration: 1000,  // duración de animación en ms
   });
 </script>
+<!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="script.js"></script>
+<!-- Tu script principal -->
+<script src="script.js"></script>
 </body>
 </html>

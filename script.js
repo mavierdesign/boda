@@ -21,3 +21,29 @@ function actualizarContador() {
 
 actualizarContador();
 setInterval(actualizarContador, 1000);
+
+// Inicialización de Swiper
+document.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper(".galeria-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000, // Cambia cada 3 segundos
+      disableOnInteraction: false, // Sigue avanzando aunque el usuario interactúe
+    },
+    loop: true, // Para que al final vuelva al inicio automáticamente
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+});
+
